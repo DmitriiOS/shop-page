@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Пижама для девочек</title>
+</head>
+<body>
+    <header>
+        <p class="logo">logo</p>
+        <div class="navigation">
+            <img src="img/person.png" alt="profile">
+            <img src="img/favorite.png" alt="favorite">
+            <img src="img/Group.png" alt="cart">
+            <img class="burger-menu" src="img/menu.png" alt="menu" onclick="openMenu()">
+        </div>
+    </header>
+    <ul class="menu">
+        <li class="menu-item menu-cross" onclick="closeMenu()">✖</li>
+        <li class="menu-item">постельное белье</li>
+        <li class="menu-item">одежда для дома</li>
+        <li class="menu-item">одежда для улицы</li>
+        <li class="menu-item" onclick="closeMenu()">выход</li>
+    </ul>
+
+    <main>
+        <div class="product">
+            <section class="product-image">
+                <div class="image-set">
+                    <img class="product-image-small" src="img/1.png" alt="another product" onclick="setProductImage(this)">
+                    <img class="product-image-small" src="img/2.png" alt="another product" onclick="setProductImage(this)">
+                    <img class="product-image-small" src="img/3.png" alt="another product" onclick="setProductImage(this)">
+                    <img class="product-image-small" src="img/4.png" alt="another product" onclick="setProductImage(this)">
+                    <img class="product-image-small" src="img/5.png" alt="another product" onclick="setProductImage(this)">
+                </div>
+            </section>
+    
+            <section class="product-description">
+                <h1>Пижама для девочек</h1>
+                <h2>Арт. 02765/46</h2>
+                <div class="rating">
+                    <p class="rating-component">Отзывы</p>
+                    <p class="rating-component">★★★★☆</p>
+                    <p class="rating-component">14 отзывов</p>
+                    <p class="rating-component"> 〉</p>
+                </div>
+    
+                <div class="price">
+                    <p class="price-current">800 ₽</p>
+                    <p class="price-old">1 500 ₽</p>
+                    <p class="rating-component"> 〉</p>
+                </div>
+    
+                <div class="discount">
+                    <div class="discount-label">скидка -36%</div>
+                    <div class="discount-label">акция -20%</div>
+                </div>
+    
+                <div class="size-menu">
+                    <p class="size-label">Выбрать размер</p>
+                    <p class="size-label">⌵</p>
+                </div>
+    
+                <a class="custom-link" href="#">Определить размер</a>
+    
+                <div class="product-quantity">
+                    <p class="product-action" onclick="addProduct()">+</p>
+                    <p class="product-action number-of-products">0</p>
+                    <p class="product-action" onclick="removeProduct()">-</p>
+                </div>
+    
+                <div class="product-add">
+                    <p class="add-action">Добавить в корзину</p>
+                    <p class="favorite-action">♡</p>
+                </div>
+    
+                <a class="custom-link" href="#">Купить в 1 клик</a>
+    
+                <hr>
+    
+                <div class="product-options">
+                    <div class="options-link">
+                        <img src="img/Closes.png" alt="">
+                        <a class="custom-link" href="#">Описание товара</a>
+                    </div>
+                    <div class="options-link">
+                        <img src="img/clock.png" alt="">
+                        <a class="custom-link" href="#">Доставка и возврат</a>
+                    </div>
+                    <div class="options-link">
+                        <img src="img/pay.png" alt="">
+                        <a class="custom-link" href="#">Способы оплаты</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="link-margins">
+            <a class="custom-link" href="#">Посмотреть все стили</a>
+        </div>
+
+        <section class="gallery">
+            <div class="gallery-main">
+                <img class="big-photo" src="img/6.png" alt="pyjamas">
+            </div>
+            <div class="gallery-additional">
+                <img class="small-photo" src="img/7.png" alt="pyjamas">
+                <img class="small-photo" src="img/8.png" alt="pyjamas">
+                <img class="small-photo" src="img/9.png" alt="pyjamas">
+                <img class="small-photo" src="img/10.png" alt="pyjamas">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="information">
+            <div class="information-list">
+                <p class="information-list-title">покупателям</p>
+                <p class="information-list-item">Каталог</p>
+                <p class="information-list-item">Акции</p>
+                <p class="information-list-item">Бренды</p>
+            </div>
+
+            <div class="information-list">
+                <p class="information-list-title">о нас</p>
+                <p class="information-list-item">О компании</p>
+                <p class="information-list-item">Новости</p>
+                <p class="information-list-item">Команда</p>
+            </div>
+        </section>
+
+        <section class="subscription">
+            <p class="information-list-title">узнайте первыми о<br> новинках и акциях</p> 
+            <form>
+                <div class="custom-input">
+                    <input class="form-email" type="email" placeholder="Адрес электронной почты">
+                    <button class="reset-button" type="reset">✖</button>
+                </div>
+                <button class="submit-button" type="submit">Подписаться</button>
+            </form>                          
+        </section>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
